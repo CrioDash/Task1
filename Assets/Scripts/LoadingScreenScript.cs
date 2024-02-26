@@ -30,6 +30,8 @@ public class LoadingScreenScript: MonoBehaviour
             t += Time.deltaTime * 4;
             yield return null;
         }
+
+        _sprite.color = endClr;
     }
 
     public IEnumerator FadeRoutine()
@@ -45,6 +47,8 @@ public class LoadingScreenScript: MonoBehaviour
             t += Time.deltaTime * 4;
             yield return null;
         }
+        
+        _sprite.color = endClr;
     }
     
 }
